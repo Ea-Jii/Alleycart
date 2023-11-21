@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="icon" href="/assets/alleycart-icon.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <script src="/main.js" defer></script>
+  </head>
+  <body>
+    <header class="container">
+      <div class="top__nav">
+        <span class="social__container">
+          <p class="follow__us">Follow us:</p>
+          <a href="#"><i class="fab fa-facebook social__icon"></i></a>
+          <a href="#"><i class="fab fa-twitter social__icon"></i></a>
+          <a href="#"><i class="fab fa-instagram social__icon"></i></a>
+        </span>
+
+        <div class="important__links">
+          <span class="link__container">
+            <i class="fas fa-phone icon"> </i
+            ><a href="tel:+1234567890">+1234567890</a>
+          </span>
+          <span class="link__container">
+            <i class="fas fa-envelope icon"></i>
+            <a href="mailto:alleycartofficial@gmail.com"
+              >AlleycartOfficial@gmail.com</a
+            >
+          </span>
+          <span class="link__container">
+            <i class="fas fa-map-marker icon"></i>
+            <a
+              href="https://maps.app.goo.gl/2GXeRzqMxXgfmo7P7"
+              target="_blank"
+              class="last__element"
+              >4217 - Lipa City, Batangas</a
+            >
+          </span>
+        </div>
+
+        <!-- To be shown in smaller screen sizes -->
+        <div class="mobile">
+          <span class="mobile__cart__container">
+            <p class="mobile__label">&#8369; 0.00</p>
+            <a href="#"><i class="fa fa-shopping-cart mobile__icon"></i></a>
+            <span class="mobile__likes__container">
+              <a href="#"><i class="fa fa-heart mobile__icon"></i></a>
+            </span>
+            <span class="mobile__login__container">
+              <a href="#"><i class="fas fa-user-circle mobile__icon"></i></a>
+              <p class="mobile__label">Sign in</p>
+            </span>
+          </span>
+        </div>
+      </div>
+
+      <div class="main__nav">
+        <div class="logo">
+          <img src="/assets/alleycart-logo.png" alt="alleycart" />
+        </div>
+        <nav class="nav__links">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Store</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="item__group">
+          <div class="search__container">
+            <input
+              type="search"
+              name=""
+              id=""
+              placeholder="Search Products"
+              class="search__bar"
+            />
+            <i class="fa fa-search search__icon"></i>
+          </div>
+
+          <div class="icon__container">
+            <span class="cart__container">
+              <p class="label">&#8369; 0.00</p>
+              <a href="#"><i class="fa fa-shopping-cart icon"></i></a>
+            </span>
+            <span class="likes__container">
+              <a href="#"><i class="fa fa-heart icon"></i></a>
+              <p class="label">Likes</p>
+            </span>
+            <span class="login__container">
+              <a href="#" class="sign__in">Sign in</a>
+            </span>
+          </div>
+        </div>
+
+        <!-- To be displayed in smaller screen -->
+        <div class="dropdown__menu">
+          <span class="hamburger">
+            <button class="menu__btn close" onclick="toggleButton()">
+              <i class="fas fa-align-right group__icon menu__icon"></i>
+              <span class="btn__label">Menu</span>
+            </button>
+          </span>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Store</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#" class="action__button">Latest Deals</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="hero__container">
+          <div class="hero__content">
+            <div class="divider"></div>
+            <h4>Best Quality Products</h4>
+            <h1>Eco-friendly Delivery</h1>
+            <p>
+              Lipeños, do you want to try delicious food offered by our
+              kababayans? Do you want to hit the trend with your clothing? We
+              would, too! It's simple: we list your menu and items online,
+              assist you with order processing, pick them up, and deliver them
+              to you — all in a flash! Interested? Let’s get started right away!
+            </p>
+            <a href="#" class="hero__btn"
+              ><i class="fas fa-shopping-bag bag"></i>Shop Now</a
+            >
+          </div>
+          <div class="hero__banner">
+            <img src="/assets/alleycart-banner.png" alt="alleycart banner" />
+          </div>
+        </div>
+      </section>
+      <!-- Simple Guide -->
+      <section class="guide">
+        <div class="guide__container">
+          <div class="guide__card">
+            <i class="fas fa-store guide__icon"></i>
+            <span class="guide__text">
+              <h4>Choose Store</h4>
+              <p>Find food and fashion stores.</p>
+            </span>
+          </div>
+
+          <div class="guide__card">
+            <i class="fas fa-box-open guide__icon"></i>
+            <span class="guide__text">
+              <h4>Pick Product</h4>
+              <p>Pick your desired product.</p>
+            </span>
+          </div>
+
+          <div class="guide__card">
+            <i class="fas fa-money-check guide__icon"></i>
+            <span class="guide__text">
+              <h4>Pay & Deliver</h4>
+              <p>Pay online or via cash on delivery.</p>
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Category -->
+      <section class="product__category">
+        <div class="category__title">
+          <h4>Choose Among These Categories.</h4>
+        </div>
+        <div class="category__container">
+          <div class="category__card">
+            <span class="category__btn">
+              <img src="/assets/discount_6951797.png" alt="" />
+              <a href="#" class="category__link"
+                >Foods<i class="fas fa-caret-right category__icon"></i
+              ></a>
+            </span>
+          </div>
+
+          <div class="category__card">
+            <span class="category__btn">
+              <img src="/assets/clothes_678302.png" alt="" />
+              <a href="#" class="category__link"
+                >Clothing<i class="fas fa-caret-right category__icon"></i
+              ></a>
+            </span>
+          </div>
+
+          <div class="category__card">
+            <span class="category__btn">
+              <img src="/assets/soda_457808.png" alt="" />
+              <a href="#" class="category__link"
+                >Drinks<i class="fas fa-caret-right category__icon"></i
+              ></a>
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Products -->
+      <section class="product__section">
+        <div class="product__container">
+          <span class="title">
+            <h2>Feeling Hungry?</h2>
+            <p>Checkout our food section.</p>
+          </span>
+
+          <div class="product__wrapper">
+            <div class="product__card">
+              <img src="/assets/products/Goto-600x450.jpg" alt="" />
+              <h4>Title</h4>
+              <p>Lorem, ipsum dolor</p>
+              <span class="group">
+                <span class="price__container">
+                  <p class="price">&#8369; 0.00</p>
+                </span>
+                <span class="btn__container">
+                  <button class="btn__atc">Add to cart</button>
+                </span>
+              </span>
+            </div>
+
+            <div class="product__card">
+              <img
+                src="/assets/products/FB_IMG_1651739743183.jpg"
+                alt=""
+                width="222px"
+                height="166px"
+              />
+              <h4>Title</h4>
+              <p>Lorem, ipsum dolor</p>
+              <span class="group">
+                <span class="price__container">
+                  <p class="price">&#8369; 0.00</p>
+                </span>
+                <span class="btn__container">
+                  <button class="btn__atc">Add to cart</button>
+                </span>
+              </span>
+            </div>
+
+            <div class="product__card">
+              <img
+                src="/assets/products/FB_IMG_1651739673101-1-600x480.jpg"
+                alt=""
+                width="222px"
+                height="166px"
+              />
+              <h4>Title</h4>
+              <p>Lorem, ipsum dolor</p>
+              <span class="group">
+                <span class="price__container">
+                  <p class="price">&#8369; 0.00</p>
+                </span>
+                <span class="btn__container">
+                  <button class="btn__atc">Add to cart</button>
+                </span>
+              </span>
+            </div>
+
+            <div class="product__card">
+              <img
+                src="/assets/products/AnB-Lomi-600x800.jpg"
+                alt=""
+                width="222px"
+                height="166px"
+              />
+              <h4>Title</h4>
+              <p>Lorem, ipsum dolor</p>
+              <span class="group">
+                <span class="price__container">
+                  <p class="price">&#8369; 0.00</p>
+                </span>
+                <span class="btn__container">
+                  <button class="btn__atc">Add to cart</button>
+                </span>
+              </span>
+            </div>
+
+            <div class="product__card">
+              <img
+                src="/assets/products/FB_IMG_1651740718346-1-600x600.jpg"
+                alt=""
+                width="222px"
+                height="166px"
+              />
+              <h4>Title</h4>
+              <p>Lorem, ipsum dolor</p>
+              <span class="group">
+                <span class="price__container">
+                  <p class="price">&#8369; 0.00</p>
+                </span>
+                <span class="btn__container">
+                  <button class="btn__atc">Add to cart</button>
+                </span>
+              </span>
+            </div>
+
+            <div class="product__card">
+              <img
+                src="/assets/products/FB_IMG_1651740146215-600x800.jpg"
+                alt=""
+                width="222px"
+                height="166px"
+              />
+              <h4>Title</h4>
+              <p>Lorem, ipsum dolor</p>
+              <span class="group">
+                <span class="price__container">
+                  <p class="price">&#8369; 0.00</p>
+                </span>
+                <span class="btn__container">
+                  <button class="btn__atc">Add to cart</button>
+                </span>
+              </span>
+            </div>
+
+            <div class="product__card">
+              <img
+                src="/assets/products/FB_IMG_1651739689317-600x480.jpg"
+                alt=""
+                width="222px"
+                height="166px"
+              />
+              <h4>Title</h4>
+              <p>Lorem, ipsum dolor</p>
+              <span class="group">
+                <span class="price__container">
+                  <p class="price">&#8369; 0.00</p>
+                </span>
+                <span class="btn__container">
+                  <button class="btn__atc">Add to cart</button>
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Divider -->
+      <div class="container__divider"></div>
+      <!-- Products -->
+
+      <section class="product__section">
+        <div class="product__container">
+          <span class="title">
+            <h2>Stay Classy!</h2>
+            <p>Checkout our fashion & apparel section.</p>
+          </span>
+          <div class="product__wrapper">
+            <div class="product__card">
+              <img
+                src="/assets/products/classy-top.jpeg"
+                alt=""
+                width="222px"
+                height="166px"
+              />
+              <h4>Title</h4>
+              <p>Lorem, ipsum dolor</p>
+              <span class="group">
+                <span class="price__container">
+                  <p class="price">&#8369; 0.00</p>
+                </span>
+                <span class="btn__container">
+                  <button class="btn__atc">Add to cart</button>
+                </span>
+              </span>
+            </div>
+
+            <div class="product__card">
+              <img
+                src="/assets/products/hanging-crop-top.jpg"
+                alt=""
+                width="222px"
+                height="166px"
+              />
+              <h4>Title</h4>
+              <p>Lorem, ipsum dolor</p>
+              <span class="group">
+                <span class="price__container">
+                  <p class="price">&#8369; 0.00</p>
+                </span>
+                <span class="btn__container">
+                  <button class="btn__atc">Add to cart</button>
+                </span>
+              </span>
+            </div>
+
+            <div class="product__card">
+              <img
+                src="/assets/products/french-retro.jpg"
+                alt=""
+                width="222px"
+                height="166px"
+              />
+              <h4>Title</h4>
+              <p>Lorem, ipsum dolor</p>
+              <span class="group">
+                <span class="price__container">
+                  <p class="price">&#8369; 0.00</p>
+                </span>
+                <span class="btn__container">
+                  <button class="btn__atc">Add to cart</button>
+                </span>
+              </span>
+            </div>
+
+            <div class="product__card">
+              <img
+                src="/assets/products/croptop.jpg"
+                alt=""
+                width="222px"
+                height="166px"
+              />
+              <h4>Title</h4>
+              <p>Lorem, ipsum dolor</p>
+              <span class="group">
+                <span class="price__container">
+                  <p class="price">&#8369; 0.00</p>
+                </span>
+                <span class="btn__container">
+                  <button class="btn__atc">Add to cart</button>
+                </span>
+              </span>
+            </div>
+
+            <div class="product__card">
+              <img
+                src="/assets/products/oversized.jpeg"
+                alt=""
+                width="222px"
+                height="166px"
+              />
+              <h4>Title</h4>
+              <p>Lorem, ipsum dolor</p>
+              <span class="group">
+                <span class="price__container">
+                  <p class="price">&#8369; 0.00</p>
+                </span>
+                <span class="btn__container">
+                  <button class="btn__atc">Add to cart</button>
+                </span>
+              </span>
+            </div>
+
+            <div class="product__card">
+              <img
+                src="/assets/products/shoulder-less dress.jpeg"
+                alt=""
+                width="222px"
+                height="166px"
+              />
+              <h4>Title</h4>
+              <p>Lorem, ipsum dolor</p>
+              <span class="group">
+                <span class="price__container">
+                  <p class="price">&#8369; 0.00</p>
+                </span>
+                <span class="btn__container">
+                  <button class="btn__atc">Add to cart</button>
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Divider -->
+      <div class="container__divider"></div>
+
+      <!-- Products -->
+
+      <section class="product__section">
+        <div class="product__container">
+          <span class="title">
+            <h2>Looking For a Drink?</h2>
+            <p>Checkout our drinks section.</p>
+          </span>
+
+          <div class="product__wrapper">
+            <div class="product__card">
+              <img src="/assets/products/Buko.jpg" alt="" />
+              <h4>Title</h4>
+              <p>Lorem, ipsum dolor</p>
+              <span class="group">
+                <span class="price__container">
+                  <p class="price">&#8369; 0.00</p>
+                </span>
+                <span class="btn__container">
+                  <button class="btn__atc">Add to cart</button>
+                </span>
+              </span>
+            </div>
+
+            <div class="product__card">
+              <img
+                src="/assets/products/frappe.jpg"
+                alt=""
+                width="222px"
+                height="166px"
+              />
+              <h4>Title</h4>
+              <p>Lorem, ipsum dolor</p>
+              <span class="group">
+                <span class="price__container">
+                  <p class="price">&#8369; 0.00</p>
+                </span>
+                <span class="btn__container">
+                  <button class="btn__atc">Add to cart</button>
+                </span>
+              </span>
+            </div>
+
+            <div class="product__card">
+              <img
+                src="/assets/products/milktea.jpg"
+                alt=""
+                width="222px"
+                height="166px"
+              />
+              <h4>Title</h4>
+              <p>Lorem, ipsum dolor</p>
+              <span class="group">
+                <span class="price__container">
+                  <p class="price">&#8369; 0.00</p>
+                </span>
+                <span class="btn__container">
+                  <button class="btn__atc">Add to cart</button>
+                </span>
+              </span>
+            </div>
+
+            <div class="product__card">
+              <img
+                src="/assets/products/shake.jpg"
+                alt=""
+                width="222px"
+                height="166px"
+              />
+              <h4>Title</h4>
+              <p>Lorem, ipsum dolor</p>
+              <span class="group">
+                <span class="price__container">
+                  <p class="price">&#8369; 0.00</p>
+                </span>
+                <span class="btn__container">
+                  <button class="btn__atc">Add to cart</button>
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="container">
+      <div class="main">
+        <span class="small__container">
+          <img src="/assets/alleycart-logo.png" alt="" />
+          <p>4217 – Lipa City Batangas Marawoy Lipa City</p>
+        </span>
+
+        <span class="small__container">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Store</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </span>
+
+        <span class="small__container">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Store</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </span>
+
+        <span class="small__container">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Store</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </span>
+      </div>
+
+      <div class="bottom">
+        <span class="copyright">
+          <p>Copyright © Alleycart 2022. All rights reserved.​</p>
+        </span>
+
+        <span class="social__container">
+          <p class="follow__us">Follow us:</p>
+          <a href="#"><i class="fab fa-facebook social__icon"></i></a>
+          <a href="#"><i class="fab fa-twitter social__icon"></i></a>
+          <a href="#"><i class="fab fa-instagram social__icon"></i></a>
+        </span>
+      </div>
+    </footer>
+  </body>
+</html>
